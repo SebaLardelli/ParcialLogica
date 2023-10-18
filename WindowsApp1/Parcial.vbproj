@@ -153,5 +153,23 @@
   <ItemGroup>
     <None Include="Resources\luke-chesser-IGtutkXikuc-unsplash %281%291.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %2834%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5087579.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image__35_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image__35_-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %2836%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %2836%291.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

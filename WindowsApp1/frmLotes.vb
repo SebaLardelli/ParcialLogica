@@ -9,4 +9,9 @@
         Else MsgBox("Escriba Solo Números", MsgBoxStyle.Exclamation, "Aviso")
         End If
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        frmMain.Show()
+        Me.Close()
+    End Sub
 End Class

@@ -1,4 +1,5 @@
-﻿Imports System.IO
+﻿
+Imports System.IO
 
 Public Class frmCambio
     Private Sub frmCambio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -20,31 +21,54 @@ Public Class frmCambio
         Else MsgBox("Escriba Solo Números", MsgBoxStyle.Exclamation, "Aviso")
         End If
 
-        Dim filePath As String = "C:\Users\Larde\Desktop\FACULTAD\Programacion IZO\Pesos.txt"
+        Dim Ruta As String = "C:\Users\Larde\Desktop\FACULTAD\Programacion IZO\Pesos.txt"
 
-        If Not File.Exists(filePath) Then
-            Using sw As StreamWriter = File.CreateText(filePath)
-                sw.WriteLine(TextBox3.Text)
+        If Not File.Exists(Ruta) Then
+            Using escribirDatos As StreamWriter = File.CreateText(Ruta)
+                escribirDatos.WriteLine(TextBox3.Text)
             End Using
         Else
-            Using sw As New StreamWriter(filePath, True)
-                sw.WriteLine(TextBox3.Text)
+            Using escribirDatos As New StreamWriter(Ruta, True)
+                escribirDatos.WriteLine(TextBox3.Text)
             End Using
         End If
 
-        Dim dt As New DataTable()
-        dt.Columns.Add("Pesos")
+        Dim datoTabla As New DataTable()
+        datoTabla.Columns.Add("Pesos")
 
-        Using sr As New StreamReader(filePath)
-            Dim line As String
-            line = sr.ReadLine()
-            Do While line IsNot Nothing
-                dt.Rows.Add(line)
-                line = sr.ReadLine()
+        Using leerSecuencia As New StreamReader(Ruta)
+            Dim linea As String
+            linea = leerSecuencia.ReadLine()
+            Do While linea IsNot Nothing
+                datoTabla.Rows.Add(linea)
+                linea = leerSecuencia.ReadLine()
             Loop
         End Using
 
-        DataGridView1.DataSource = dt
+        DataGridView1.DataSource = datoTabla
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        frmMain.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            Button3.PerformClick()
+            e.Handled = True
+        End If
+        If e.KeyChar = ChrW(Keys.S) Then
+            Button2.PerformClick()
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            Button3.PerformClick()
+            e.Handled = True
+        End If
     End Sub
 End Class
