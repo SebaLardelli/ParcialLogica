@@ -65,9 +65,9 @@ Partial Class frmCambio
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(95, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(61, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1321, 351)
+        Me.GroupBox1.Size = New System.Drawing.Size(1189, 351)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Dolar"
@@ -78,7 +78,7 @@ Partial Class frmCambio
         Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button4.Location = New System.Drawing.Point(1110, 311)
+        Me.Button4.Location = New System.Drawing.Point(961, 311)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(205, 34)
         Me.Button4.TabIndex = 4
@@ -95,7 +95,7 @@ Partial Class frmCambio
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(272, 34)
         Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Converitr"
+        Me.Button3.Text = "Convertir"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Label2
@@ -163,9 +163,9 @@ Partial Class frmCambio
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.TextBox3)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(95, 390)
+        Me.GroupBox2.Location = New System.Drawing.Point(61, 390)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1321, 280)
+        Me.GroupBox2.Size = New System.Drawing.Size(1189, 280)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Pesos"
@@ -175,7 +175,7 @@ Partial Class frmCambio
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(6, 61)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1309, 217)
+        Me.DataGridView1.Size = New System.Drawing.Size(1177, 217)
         Me.DataGridView1.TabIndex = 2
         '
         'Label3
@@ -199,7 +199,7 @@ Partial Class frmCambio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1523, 682)
+        Me.ClientSize = New System.Drawing.Size(1301, 682)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)

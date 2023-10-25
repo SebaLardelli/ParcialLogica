@@ -21,7 +21,7 @@ Public Class frmCambio
         Else MsgBox("Escriba Solo Números", MsgBoxStyle.Exclamation, "Aviso")
         End If
 
-        Dim Ruta As String = "C:\Users\Larde\Desktop\FACULTAD\Programacion IZO\Pesos.txt"
+        Dim Ruta As String = "..\..\Pesos.txt"
 
         If Not File.Exists(Ruta) Then
             Using escribirDatos As StreamWriter = File.CreateText(Ruta)

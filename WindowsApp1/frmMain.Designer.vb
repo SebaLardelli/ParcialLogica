@@ -56,7 +56,7 @@ Partial Class frmMain
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabControl1.Location = New System.Drawing.Point(464, 12)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 8)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(576, 166)
@@ -102,9 +102,9 @@ Partial Class frmMain
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = Global.WindowsApp1.My.Resources.Resources.zyro_image__34_
-        Me.PictureBox2.Location = New System.Drawing.Point(464, 134)
+        Me.PictureBox2.Location = New System.Drawing.Point(442, 61)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(576, 493)
+        Me.PictureBox2.Size = New System.Drawing.Size(859, 623)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
@@ -123,7 +123,7 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1527, 683)
+        Me.ClientSize = New System.Drawing.Size(1301, 682)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
