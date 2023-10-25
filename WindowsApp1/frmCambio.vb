@@ -17,7 +17,8 @@ Public Class frmCambio
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If IsNumeric(TextBox1.Text) AndAlso IsNumeric(TextBox2.Text) Then
-            TextBox3.Text = CInt(TextBox1.Text) * CInt(TextBox2.Text)
+            Dim Resultado As Integer = CInt(TextBox1.Text) * CInt(TextBox2.Text)
+            TextBox3.Text = "$" & Resultado.ToString()
         Else MsgBox("Escriba Solo Números", MsgBoxStyle.Exclamation, "Aviso")
         End If
 
